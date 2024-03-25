@@ -1,13 +1,13 @@
-1. 第一种更新方法Subgraph:
-    - 数据处理流程的起点.
-    - 从不同的DeFi协议和区块链网络获取流动性池的基础数据.
-    - 这些数据包括流动性池的地址、总锁定价值(TVL), 费用, 参与的代币.
+1. The first update method, Subgraph
+    - The starting point of the data processing flow.
+    - Obtains foundational data from various DeFi protocols and blockchain networks about liquidity pools.
+    - This data includes the addresses of the liquidity pools, their Total Value Locked (TVL), fees, and participating tokens.
 
-2. 第二种更新方法Factory: (手动进行: 提高没有跑到的覆盖率)
-    - 在获取了基础的流动性池数据后，需要与特定协议的Factory合约交互.
-    - Factory合约用于创建新的流动性池或代币，code涉及数据处理或new pool的创建.
+2. The second update method, Factory: (Manually performed to increase coverage not reached)
+    - After obtaining basic liquidity pool data, it interacts with specific protocol Factory contracts.
+    - Factory contracts are used to create new liquidity pools or tokens, involving code for data handling or the creation of new pools.
 
-3. 第三种更新方法Coverage:
+3. Third update method, Coverage:
     - 在获取流动性池的基础数据并处理完Factory合约相关的逻辑后，需要获取关于这些池子的保险或覆盖信息.
     - code涉及到风险评估和保险覆盖的计算. (涵盖线上数数据库的比例, 起到monitor的效果)
 
